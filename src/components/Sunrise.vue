@@ -40,8 +40,8 @@
   findWords: function(){
     axios.get('https://api.sunrise-sunset.org/json', {
       params: {
-        lat: this.phrase,
-        long: this.rhyme
+        lt: this.lat,
+        lg: this.long
       }
     })
     .then(response => {
